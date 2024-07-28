@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <title>Order Detail</title>
 
 <style>
@@ -47,21 +48,21 @@
 <body>
 
     <div class="container mt-5">
-        <h2>Chi Tiết Đặt Hàng</h2>
-        <p> ID  Đơn Hàng: ${order.id}</p>
-        <p>Ngày Đặt Hàng : <fmt:formatDate value="${order.createDate}" pattern="dd/MM/yyyy" /></p>
-        <p>Tổng Tiền<fmt:formatNumber value="${order.price}" pattern="###,###" /> VND</p>
-        <p> Ghi Chú Đặt Hàng: ${order.orderNote}</p>
-       <%--  <p> Tình trạng: ${order.orderStatus == 0 ?  "Chưa Xác Nhận Đơn Hàng" : "Xác Nhận Đơn Hàng"}</p> --%>
+        <h2>Order Detail</h2>
+        <p> ID  order: ${order.id}</p>
+        <p>Order date : <fmt:formatDate value="${order.createDate}" pattern="dd/MM/yyyy" /></p>
+        <p>Total<fmt:formatNumber value="${order.price}" pattern="###,###" /> VND</p>
+        <p>Order note: ${order.orderNote}</p>
+         <p>Status: ${order.orderStatus == 0 ?  "Order Not Confirmed" : "Order Confirmed"}</p>  
 
-        <h3>Mặt hàng	</h3>
+        <h3>Items</h3>
         <table class="table table-bordered">
             <thead>
                 <tr >
-                    <th class="title-table">Sản phẩm</th>
-                    <th class="title-table">Số lượng</th>
-                    <th class="title-table">Giá</th>
-                    <th class="title-table">Tổng cộng</th>
+                    <th class="title-table">Product</th>
+                    <th class="title-table">Quantity</th>
+                    <th class="title-table">Price</th>
+                    <th class="title-table">Total</th>
                 </tr>
             </thead>
             <tbody>

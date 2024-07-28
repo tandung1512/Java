@@ -5,9 +5,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Đăng Ký Tài Khoản</title>
+<title>Sign Up</title>
 <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <style>
 .container-fluid {
     height: 100vh;
@@ -24,7 +25,7 @@
 }
 
 .left {
-    background-image: url('images/login.jpg');
+    background-image: url('images/xiaomi14-utral.png');
     background-size: cover;
     background-position: center;
     border-top-left-radius: 10px;
@@ -76,29 +77,29 @@
         <div class="col-md-6 right">
             <div class="register-form">
                 <h2 class="text-center mb-4" style="color: #4d4d4d;">
-                    <i class="fa-solid fa-backward" onclick="goBack()" style="width: 30px"></i><a href="/index"><img src="/images/logo-pnj-footer.png" style="width: 20%" alt="Logo"></a> Trang Sức Thời Thượng <br>Đăng Ký Tài Khoản
+                    <i class="fa-solid fa-backward" onclick="goBack()" style="width: 30px"></i><a href="/index"><img src="/images/logo-menu.png" style="width: 20%" alt="Logo"></a>Register Account
                 </h2>
                 <form action="/login/signup" method="POST">
                 	<div class="form-group">
                         <label for="gmail">Gmail</label>
-                        <input type="text" id="gmail" name="gmail" class="form-control rounded-pill" placeholder="Nhập Gmail Của Bạn" required>
+                        <input type="text" id="gmail" name="gmail" class="form-control rounded-pill" placeholder="Fill your Gmail!" required>
                     </div>
                     <div class="form-group">
-                        <label for="username">Tài Khoản</label>
-                        <input type="text" id="username" name="username" class="form-control rounded-pill" placeholder="Nhập Tài Khoản Của Bạn" required>
+                        <label for="username">Username</label>
+                        <input type="text" id="username" name="username" class="form-control rounded-pill" placeholder="Fill your Account!" required>
                     </div>
                     <div class="form-group">
-                        <label for="password">Mật Khẩu</label>
-                        <input type="password" id="password" name="password" class="form-control rounded-pill"placeholder="Nhập Mật Khẩu Của Bạn" required>
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" class="form-control rounded-pill"placeholder="Fill your Password!" required>
                     </div>
                     <div class="form-group">
-                        <label for="confirmPassword">Xác Nhận Mật Khẩu</label>
-                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control rounded-pill" placeholder="Nhập Lại Mật Khẩu" required>
+                        <label for="confirmPassword">Re-Password</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" class="form-control rounded-pill" placeholder="Repassword!" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Đăng Ký</button>
+                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Sign Up</button>
                 </form>
                 <div class="text-center mt-3">
-                    <p class="mb-0">Bạn đã có tài khoản? <a href="/login" class="login-link">Đăng nhập ngay</a></p>
+                    <p class="mb-0">Have Account? <a href="/login" class="login-link">Sign In</a></p>
                 </div>
             </div>
         </div>

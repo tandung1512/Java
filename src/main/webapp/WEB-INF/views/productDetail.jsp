@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Chi tiết sản phẩm</title>
+    <title>Product Detail</title>
     
     <link href="${pageContext.request.contextPath}/css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
@@ -105,16 +106,16 @@
                 <div class="product-details">
                    
                     <h2>${product.name}</h2>
-                    <p><strong>Giá:</strong> ${product.price} đ</p>
-                    <p><strong>Số lượng:</strong> ${product.quantity}</p>
-                    <p><strong>Màu sắc:</strong> ${product.color}</p>
-                    <p><strong>Nhà sản xuất:</strong> ${product.manufactor}</p>
-                    <p><strong>Mô tả:</strong> ${product.description}</p>
+                    <p><strong>Price:</strong> ${product.price} đ</p>
+                    <p><strong>Quantity:</strong> ${product.quantity}</p>
+                    <p><strong>Color:</strong> ${product.color}</p>
+                    <p><strong>Manufactor:</strong> ${product.manufactor}</p>
+                    <p><strong>Desc:</strong> ${product.description}</p>
                     <form action="${pageContext.request.contextPath}/cart/add" method="post">
                         <input type="hidden" name="productId" value="${product.productId}" />
                         <input type="hidden" name="quantity" value="1" />
                         <!-- Giá trị mặc định là 1, bạn có thể thêm input để người dùng chọn số lượng -->
-                        <button type="submit" class="btn btn-primary btn-animated" style="margin-left: 50px">Thêm vào giỏ hàng</button>
+                        <button type="submit" class="btn btn-primary btn-animated" style="margin-left: 50px">Add to shopping cart</button>
                     </form>
                 </div>
             </div>

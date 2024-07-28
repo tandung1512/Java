@@ -21,7 +21,7 @@
 <link href="${pageContext.request.contextPath}/css/tiny-slider.css" rel="stylesheet">
 <!-- Custom CSS -->
 <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
-
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <title>Shopping Cart</title>
 </head>
 
@@ -31,7 +31,7 @@
     <!-- End Header/Navigation -->
 
     <div class="container mt-5">
-        <h1>Giỏ hàng của bạn</h1>
+        <h1>Your shopping cart</h1>
         <c:if test="${not empty message}">
             <div class="alert alert-success">${message}</div>
         </c:if>
@@ -42,11 +42,11 @@
         <table class="table table-bordered">
             <thead>
                 <tr>
-                    <th>Sản phẩm</th>
-                    <th>Số lượng</th>
-                    <th>Giá</th>
-                    <th>Tổng</th>
-                    <th>Thao tác</th>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Act</th>
                 </tr>
             </thead>
             <tbody>
@@ -61,7 +61,7 @@
                                     name="quantity" value="${item.quantity}" class="form-control"
                                     style="width: 60px; display: inline-block; margin-right: 5px;"
                                     min="1" />
-                                <button type="submit" class="btn btn-primary" style="float: right">Cập nhật</button>
+                                <button type="submit" class="btn btn-primary" style="float: right">Update</button>
                             </form>
                         </td>
                         <td><fmt:formatNumber value="${item.product.price}"
@@ -71,18 +71,18 @@
                             VND</td>
                         <td><a
                             href="${pageContext.request.contextPath}/cart/delete?productId=${item.product.productId}"
-                            class="btn btn-danger">Xóa</a></td>
+                            class="btn btn-danger">Delete</a></td>
                     </tr>
                 </c:forEach>
             </tbody>
         </table>
 
         <div class="text-right">
-            <strong>Tổng cộng: <fmt:formatNumber value="${totalPrice}" pattern="###,###" /> VND</strong>
+            <strong>Total: <fmt:formatNumber value="${totalPrice}" pattern="###,###" /> VND</strong>
         </div>
         <form action="${pageContext.request.contextPath}/checkout" method="get">
             <div class="text-right mt-3">
-                <button type="submit" class="btn btn-success" style="float: right; margin-top: -50px;">Tiến hành thanh toán</button>
+                <button type="submit" class="btn btn-success" style="float: right; margin-top: -50px;">Proceed to payment</button>
             </div>
         </form>
     </div>

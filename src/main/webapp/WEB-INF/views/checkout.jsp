@@ -26,7 +26,7 @@
 <!-- Custom CSS -->
 <link href="${pageContext.request.contextPath}/css/style.css"
 	rel="stylesheet">
-
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <title>Checkout</title>
 </head>
 
@@ -36,34 +36,34 @@
 	<!-- End Header/Navigation -->
 
 	<div class="container mt-5">
-		<h2>Thanh toán</h2>
+		<h2>Checkout</h2>
 		<form action="${pageContext.request.contextPath}/checkout/process"
 			method="post">
 			
 			<div class="form-group">
-				<label for="fullName">Họ và Tên</label> <input type="text"
+				<label for="fullName">Full name</label> <input type="text"
 					class="form-control" id="fullName" name="fullName" required>
 			</div>
 			<div class="form-group">
-				<label for="address">Địa chỉ</label> <input type="text"
+				<label for="address">Address</label> <input type="text"
 					class="form-control" id="address" name="address" required>
 			</div>
 			<div class="form-group">
-				<label for="phone">Số điện thoại</label> <input type="text"
+				<label for="phone">Phone number</label> <input type="text"
 					class="form-control" id="phone" name="phone" required>
 			</div>
 			<div class="form-group">
-				<label for="orderNote">Ghi chú đơn hàng </label>
+				<label for="orderNote">Order note</label>
 				<textarea class="form-control" id="orderNote" name="orderNote"></textarea>
 			</div>
 			<div class="form-group">
-				<label for="totalPrice">Tổng tiền</label> <input type="text"
+				<label for="totalPrice">Total</label> <input type="text"
 					class="form-control" id="totalPrice" name="totalPrice"
 					value="<fmt:formatNumber value='${totalPrice}' pattern='###,###' /> VND"
 					readonly>
 			</div>
 			<button type="submit" class="btn btn-primary"
-				style="margin: 50px 50px 50px 80%;"  >Thanh toán</button>
+				style="margin: 50px 50px 50px 80%;"  >Pay your order</button>
 		</form>
 	</div>
 

@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Login Page</title>
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <!-- Bootstrap CSS -->
 <link
 	href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
@@ -27,7 +28,7 @@
 }
 
 .left {
-	background-image: url('/images/login.jpg');
+	background-image: url('/images/xiaomi14-utral.png');
 	background-size: cover;
 	background-position: center;
 	border-top-left-radius: 10px;
@@ -87,29 +88,27 @@ label, .forgot-password, .register {
 
 					<h2 class="text-center mb-4" style="color: #4d4d4d;">
 						<i class="fa-solid fa-backward" onclick="goBack()"
-							style="width: 30px"></i><a href="/index"><img src="/images/logo-pnj-footer.png" style="width: 20%" alt="Logo"></a> Trang Sức Thời Thượng <br>Đăng
-						Nhập
+							style="width: 30px"></i><a href="/index"><img src="/images/logo-menu.png" style="width: 20%" alt="Logo"></a> Login
 					</h2>
 
 					<form action="/login/signin" method="POST">
 						<div class="form-group">
-							<label for="username">Tài Khoản</label> <input type="text"
+							<label for="username">Username</label> <input type="text"
 								id="username" name="username" class="form-control rounded-pill"
-								placeholder="Nhập Tài Khoản Của Bạn" required value="${username}">
+								placeholder="Fill your Username!" required value="${username}">
 						</div>
 						<div class="form-group">
-							<label for="password">Mật Khẩu</label> <input type="password"
+							<label for="password">Password</label> <input type="password"
 								id="password" name="password" class="form-control rounded-pill"
-								placeholder="Nhập Mật Khẩu Của Bạn" required value="${password}">
+								placeholder="Fill your Password!" required value="${password}">
 						</div>
 						<div class="form-group form-check">
 							<input type="checkbox" class="form-check-input" id="rememberMe" name="rememberMe">
-							<label class="form-check-label" for="rememberMe">Nhớ Tài
-								Khoản</label>
+							<label class="form-check-label" for="rememberMe">Remember me</label>
 						</div>
 						<div class="form-group">
-							<a href="/forgetpassword" class="forgot-password">Quên
-								Mật Khẩu |</a> <a href="/signup" class="register">Đăng Ký</a>
+							<a href="/forgetpassword" class="forgot-password">Forget Password
+								  |</a> <a href="/signup" class="register">SignUp</a>
 						</div>
 						<!-- Trong file login.html -->
 
@@ -122,7 +121,7 @@ label, .forgot-password, .register {
 
 
 						<button type="submit"
-							class="btn btn-primary btn-block rounded-pill">Đăng Nhập</button>
+							class="btn btn-primary btn-block rounded-pill">Login</button>
 					</form>
 				</div>
 

@@ -16,14 +16,12 @@
 				<div class="col-lg-4">
 					<div class="mb-4 footer-logo-wrap">
 						<a href="#" class="footer-logo"><img
-							src="/images/logo-pnj-footer.png" style="width: 200px" alt="Logo">
+							src="/images/logo.png" style="width: 200px" alt="Logo">
 						</a>
 					</div>
-					<p class="mb-4">Â© 2017 Gold, Silver and Gemstone Joint Stock
-						Company</p>
-					<p class="infor-footer">170E Phan Dang Luu, Ward 3, Phu Nhuan
-						District, Ho Chi Minh City</p>
-					<p class="infor-footer">Tel: 028 39951703 - Fax: 028 3995 1702</p>
+					<p class="mb-4">About© 2010 Xiaomi Company</p>
+					<p class="infor-footer">District 12, Ho Chi Minh City</p>
+					<p class="infor-footer">Tel: 086 85 84 834 - Fax: 028 3795 5702</p>
 
 					<p class="infor-footer">Business registration certificate:
 						0300521758 issued by the Department of Planning and Investment of
@@ -32,8 +30,8 @@
 
 					<p class="infor-footer">Support hotline (08:00-21:00, free
 						call)</p>
-					<p class="infor-footer">Call to purchase: 1800545457 (option 1)</p>
-					<p class="infor-footer">Complaints: 1800545457 (option 2)</p>
+					<p class="infor-footer">Call to purchase: 1800545455 (option 1)</p>
+					<p class="infor-footer">Complaints: 1800545477 (option 2)</p>
 					<br>
 					<ul class="list-unstyled custom-social">
 						<li><a href="#"><span class="fa fa-brands fa-facebook-f"></span></a></li>
@@ -50,13 +48,13 @@
 								<li><a href="#" style="font-weight: bold; font-size: 14px">About
 										Us </a></li>
 								<br>
-								<li><a href="#">About PNJ</a></li>
-								<li><a href="#">PNJ Story</a></li>
+								<li><a href="#">About Xiaomi</a></li>
+								<li><a href="#">Xiaomi Story</a></li>
 								<li><a href="#">Recruitment</a></li>
 								<li><a href="#">Export </a></li>
 								<li><a href="#">Wholesale Business </a></li>
-								<li><a href="#">Diamond Inspection </a></li>
-								<li><a href="#">Gold Bar Business </a></li>
+								<li><a href="#">Xiaomi Repair </a></li>
+								<li><a href="#">Product Business </a></li>
 
 							</ul>
 						</div>

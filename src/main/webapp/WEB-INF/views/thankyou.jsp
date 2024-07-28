@@ -24,7 +24,7 @@
 <!-- Custom CSS -->
 <link href="${pageContext.request.contextPath}/css/style.css"
 	rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <title>Thank You</title>
 
 <style>
@@ -41,7 +41,7 @@
 			<div class="row justify-content-between">
 				<div class="col-lg-5">
 					<div class="intro-excerpt">
-						<h1>Cart</h1>
+						<h1 style="color: black;" >Cart</h1>
 					</div>
 				</div>
 				<div class="col-lg-7"></div>
@@ -66,14 +66,14 @@
 								d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
             </svg>
 					</span>
-					<h2 class="display-3 text-black">Cảm Ơn!</h2>
-					<p class="lead mb-5">Thanh Toán Thành Công</p>
+					<h2 class="display-3 text-black">Thank you to shopping!</h2>
+					<p class="lead mb-5">Pay success!</p>
 					<p>
-						<a href="/shop" class="btn btn-sm btn-outline-black"> Quay Trở Lại Cửa Hàng
+						<a href="/shop" class="btn btn-sm btn-outline-black"> Return to shop
 							</a>
 					</p>
 				<button type="submit" class="btn btn-primary" onclick="window.location='/orders'"
-				   >Lịch Sử Mua Hàng</button>
+				   >History Shopping</button>
 				</div>
 			</div>
 		</div>

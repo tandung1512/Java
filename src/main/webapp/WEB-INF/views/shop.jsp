@@ -18,8 +18,8 @@
 <link href="${pageContext.request.contextPath}/css/tiny-slider.css" rel="stylesheet">
 <!-- Custom CSS -->
 <link href="${pageContext.request.contextPath}/css/style.css" rel="stylesheet">
-<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-<title>Cửa hàng</title>
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
+<title>Shop</title>
 <style>
     .search-section {
         display: flex;
@@ -90,8 +90,8 @@
         background-color: white;
         border: 1px solid #ccc;
     }
-    .color-options label[for="color-gold"] {
-        background-color: gold;
+    .color-options label[for="color-black"] {
+        background-color: black;
     }
     .sort-options button {
         background: none;
@@ -152,15 +152,11 @@
             <div class="row justify-content-between">
                 <div class="col-lg-5">
                     <div class="intro-excerpt">
-                        <h1>Cửa hàng</h1>
-                        <p class="mb-4">Hãy cùng nhau mua sắm tại PNJ nào các tình yêu ơi.</p>
+                        <h1 style="color: black;">Shop</h1>
+                        <p style="color: black; class="mb-4">Let's shopping at Xiaomi.</p>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <div class="hero-img-wrap">
-                        <img src="images/001.png" class="img-fluid" width="440px" style="padding-left: 80px">
-                    </div>
-                </div>
+               
             </div>
         </div>
     </div>
@@ -175,15 +171,15 @@
         <form method="get" action="/shop" class="filter-section">
             <div class="category-list">
                 <select name="category">
-                    <option value="">Tất cả danh mục</option>
-                    <option value="Nhẫn" ${param.category == 'Nhẫn' ? 'selected' : ''}>Nhẫn</option>
-                    <option value="Dây chuyền" ${param.category == 'Dây chuyền' ? 'selected' : ''}>Dây chuyền</option>
-                    <option value="Bông tai" ${param.category == 'Bông tai' ? 'selected' : ''}>Bông tai</option>
+                    <option value="">All Category</option>
+                    <option value="Nhẫn" ${param.category == 'Xiaomi' ? 'selected' : ''}>Xiaomi</option>
+                    <option value="Dây chuyền" ${param.category == 'Redmi' ? 'selected' : ''}>Redmi</option>
+                    <option value="Bông tai" ${param.category == 'Poco' ? 'selected' : ''}>Poco</option>
                 </select>
             </div>
             <div class="price-range">
-                <input type="number" name="minPrice" placeholder="Giá min" min="0" value="${param.minPrice}">
-                <input type="number" name="maxPrice" placeholder="Giá max" min="0" value="${param.maxPrice}">
+                <input type="number" name="minPrice" placeholder="Min" min="0" value="${param.minPrice}">
+                <input type="number" name="maxPrice" placeholder="Max" min="0" value="${param.maxPrice}">
             </div>
             <div class="sort-options">
                 <button type="submit" name="sortOrder" value="asc">
@@ -194,12 +190,12 @@
                 </button>
             </div>
              <div class="color-section">
-        <label>Màu Sắc</label>
+        <label>Color</label>
         <div class="color-options">
             <input type="checkbox" id="color-white" name="color" value="white" ${param.color.contains('white') ? 'checked' : ''}>
             <label for="color-white"></label>
-            <input type="checkbox" id="color-gold" name="color" value="gold" ${param.color.contains('gold') ? 'checked' : ''}>
-            <label for="color-gold"></label>
+            <input type="checkbox" id="color-black" name="color" value="black" ${param.color.contains('black') ? 'checked' : ''}>
+            <label for="color-black"></label>
         </div>
     </div>
             <button type="submit"><i class="fa-solid fa-filter"></i></button>
@@ -222,7 +218,7 @@
                     <form action="${pageContext.request.contextPath}/cart/add" method="post">
                         <input type="hidden" name="productId" value="${product.productId}" />
                         <input type="hidden" name="quantity" value="1" />
-                        <button type="submit" class="btn btn-primary add-to-cart-button">Thêm vào giỏ hàng</button>
+                        <button type="submit" class="btn btn-primary add-to-cart-button">Add to shopping cart</button>
                     </form>
                 </div>
             </c:forEach>

@@ -20,18 +20,18 @@
 <jsp:include page="menu.jsp"></jsp:include>
 
     <div class="container mt-5">
-        <h2>Đơn hàng của tôi</h2>
+        <h2>My order</h2>
         <c:forEach var="order" items="${orders}">
             <div class="card mb-3">
                 <div class="card-header">
-                     ID Đơn Hàng: ${order.id}
+                     ID Order: ${order.id}
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Tổng Giá: <fmt:formatNumber value="${order.price}" pattern="###,###" /> VND</h5>
-                    <p class="card-text"> Ngày đặt hàng: <fmt:formatDate value="${order.createDate}" pattern="dd/MM/yyyy" /></p>
-                    <%-- <p class="card-text">Tình trạng: ${order.orderStatus == 0 ? "Chưa Xác Nhận Đơn Hàng" : "Xác Nhận Đơn Hàng"}</p> --%>
+                    <h5 class="card-title">Total: <fmt:formatNumber value="${order.price}" pattern="###,###" /> VND</h5>
+                    <p class="card-text"> Order date: <fmt:formatDate value="${order.createDate}" pattern="dd/MM/yyyy" /></p>
+                   <p class="card-text">Status: ${order.orderStatus == 0 ? "Order Not Confirmed" : "Order Confirmed"}</p>
                  
-                    <a href="${pageContext.request.contextPath}/order?orderId=${order.id}" class="btn btn-primary">Xem Chi Tiết Đơn Hàng</a>
+                    <a href="${pageContext.request.contextPath}/order?orderId=${order.id}" class="btn btn-primary">View order detail</a>
                 </div>
             </div>
         </c:forEach>

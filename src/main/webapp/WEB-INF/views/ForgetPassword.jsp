@@ -6,8 +6,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khôi Phục Mật Khẩu</title>
+<title>Reset Password</title>
 <!-- Bootstrap CSS -->
+<link rel="shortcut icon" type="image/png" href="images/logo-tiltle.png" />
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     rel="stylesheet">
 <style>
@@ -26,7 +27,7 @@
     }
 
     .left {
-        background-image: url('/images/login.jpg');
+        background-image: url('/images/xiaomi14-utral.png');
         background-size: cover;
         background-position: center;
         border-top-left-radius: 10px;
@@ -81,26 +82,26 @@
         <div class="col-md-6 right">
             <div class="register-form">
                 <h2 class="text-center mb-4" style="color: #4d4d4d;">
-                    <a href="/index"><img src="/images/logo-pnj-footer.png" style="width: 20%" alt="Logo"></a> Trang Sức Thời Thượng <br>Khôi Phục Mật Khẩu
+                    <a href="/index"><img src="/images/logo-menu.png" style="width: 20%" alt="Logo"></a>  Reset Password
                 </h2>
                 <form id="find-email-form" action="/forgetpassword/find-email" method="POST">
                     <div class="form-group">
-                        <label for="username">Tài Khoản</label> <input type="text" id="username" name="username" class="form-control rounded-pill" placeholder="Nhập Tài Khoản Của Bạn" required>
+                        <label for="username">Username</label> <input type="text" id="username" name="username" class="form-control rounded-pill" placeholder="Fill your Username!" required>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Tìm Gmail</button>
+                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Find Gmail</button>
                 </form>
 
                 <form id="reset-password-form" action="/forgetpassword/reset-password" method="POST" style="display: none;">
                     <div class="form-group">
-                        <label for="username_reset">Tài Khoản</label>
-                        <input type="text" id="username_reset" name="username_reset" class="form-control rounded-pill" placeholder="Nhập Tài Khoản Của Bạn" value="${usernamefgpw}" required>
+                        <label for="username_reset">Username</label>
+                        <input type="text" id="username_reset" name="username_reset" class="form-control rounded-pill" placeholder="Fill your Username!" value="${usernamefgpw}" required>
                     </div>
 
                     <div class="form-group">
                         <label for="email">Gmail</label>
                         <input type="text" id="email" name="email" class="form-control rounded-pill" value="${foundEmail}" readonly>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Khôi Phục Mật Khẩu</button>
+                    <button type="submit" class="btn btn-primary btn-block rounded-pill">Reset password</button>
                 </form>
 
                 <c:if test="${not empty errorMessage}">

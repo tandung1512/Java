@@ -35,8 +35,8 @@ body {
 		class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
 		<div class="app-header header-shadow">
 			<div class="app-header__logo">
-				<a class="navbar-brand" href="/admin">
-			<img src="/images/logo-pnj-footer.png" style="width: 20%" alt="Logo">
+				<a class="navbar-brand" href="/index">
+			<img src="/images/logo-menu.png" style="width: 60%" alt="Logo">
 		</a>
 				<div class="header__pane ml-auto">
 					<div>
